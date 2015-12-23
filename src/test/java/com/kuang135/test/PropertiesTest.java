@@ -11,7 +11,7 @@ public class PropertiesTest {
 	
 	@Test
 	public void test1() throws IOException {
-		Properties properties = PropertiesLoaderUtils.loadAllProperties("env.properties");
+		Properties properties = PropertiesLoaderUtils.loadAllProperties("config.properties");
 		String value = properties.getProperty("testKey");
 		System.out.println(value);
 	}

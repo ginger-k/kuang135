@@ -14,9 +14,6 @@ import com.kuang135.demo.service.UserService;
 import com.kuang135.frame.dao.DbUtil;
 
 
-/*
- * test
- */
 @Controller
 public class UserController {
 	
@@ -28,7 +25,6 @@ public class UserController {
 		System.out.println("controller demo --- --- ");
 		return "demo/demo";
 	}
-	
 	
 	@RequestMapping(value="/demo/dbutil")
 	@ResponseBody
@@ -51,7 +47,4 @@ public class UserController {
 		System.out.println("controller demo mybatis --- --- ");
 		return userService.getAll();
 	}
-	
-	
-
 }

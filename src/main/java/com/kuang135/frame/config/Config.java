@@ -35,7 +35,7 @@ public class Config {
 	
 	static {
 		try {
-			InputStream in = Config.class.getResourceAsStream("/env.properties");
+			InputStream in = Config.class.getResourceAsStream("/config.properties");
 			Properties properties = new Properties();
 			properties.load(in);
 			Field[] fields = Config.class.getDeclaredFields();
