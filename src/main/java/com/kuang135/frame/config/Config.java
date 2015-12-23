@@ -54,7 +54,7 @@ public class Config {
 						}  else if (type == String.class) {
 							field.set(null, value);
 						} else {
-							throw new ConfigIllegalTypeException();
+							throw new ConfigIllegalTypeException("-------> Config类型只能为Boolean,String,String[] <-------");
 						}
 					}
 				}
