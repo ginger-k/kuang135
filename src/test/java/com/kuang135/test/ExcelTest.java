@@ -27,7 +27,7 @@ public class ExcelTest {
 		//内容
 		String sql = "SELECT id id,username name,password password FROM user";
 		@SuppressWarnings({ "resource", "unused" })
-		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring/beans*.xml");
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring/spring*.xml");
 		List<Map<String,Object>> records = DbUtil.getMapList(sql);
 		SheetBean sheetBean = new SheetBean("表1", propertyTitle, records);
 		//excel文件名，一定要用系统分隔符
